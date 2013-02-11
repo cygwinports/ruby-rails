@@ -10,4 +10,4 @@ programmer happiness and sustainable productivity. It encourages beautiful code
 by favoring convention over configuration."
 
 # just a meta-package
-REQUIRES="ruby-actionmailer ruby-actionpack ruby-activerecord ruby-activeresource ruby-activesupport ruby-bundler ruby-railties"
+REQUIRES="ruby-actionmailer ruby-actionpack ruby-activerecord ruby-activeresource ruby-activesupport ruby-bcrypt ruby-bundler ruby-coffee-rails ruby-jbuilder ruby-jquery-rails ruby-mysql2 ruby-pg ruby-railties ruby-sass-rails ruby-sqlite3 ruby-uglifier"
