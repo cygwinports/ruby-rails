@@ -3,11 +3,11 @@ inherit rubygem
 NAME="ruby-rails"
 VERSION=3.2.11
 RELEASE=1
-CATEGORY="Ruby"
+CATEGORY="Ruby Web"
 SUMMARY="Ruby on Rails web framework"
 DESCRIPTION="Ruby on Rails is a full-stack web framework optimized for
 programmer happiness and sustainable productivity. It encourages beautiful code
 by favoring convention over configuration."
 
 # just a meta-package
-REQUIRES="ruby-actionmailer ruby-actionpack ruby-activerecord ruby-activeresource ruby-activesupport ruby-bcrypt ruby-bundler ruby-coffee-rails ruby-jbuilder ruby-jquery-rails ruby-mysql2 ruby-pg ruby-railties ruby-sass-rails ruby-sqlite3 ruby-uglifier"
+REQUIRES="ruby-actionmailer ruby-actionpack ruby-activerecord ruby-activeresource ruby-activesupport ruby-bcrypt ruby-bundler ruby-coffee-rails ruby-jbuilder ruby-jquery-rails ruby-mysql2 ruby-pg ruby-railties ruby-sass-rails ruby-sqlite3 ruby-uglifier ruby-unicorn"
