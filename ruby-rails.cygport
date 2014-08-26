@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-rails"
-VERSION=3.2.14
+VERSION=4.0.9
 RELEASE=1
 CATEGORY="Ruby Web"
 SUMMARY="Ruby on Rails web framework"
@@ -9,5 +9,9 @@ DESCRIPTION="Ruby on Rails is a full-stack web framework optimized for
 programmer happiness and sustainable productivity. It encourages beautiful code
 by favoring convention over configuration."
 
-# just a meta-package
-REQUIRES="ruby-actionmailer ruby-actionpack ruby-activemodel ruby-activerecord ruby-activeresource ruby-activesupport ruby-bcrypt ruby-bundler ruby-coffee-rails ruby-jbuilder ruby-jquery-rails ruby-mysql2 ruby-pg ruby-railties ruby-sass-rails ruby-sqlite3 ruby-uglifier ruby-unicorn"
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_rails_REQUIRES="ruby-coffee-rails ruby-jbuilder ruby-jquery-rails ruby-sass-rails ruby-sdoc ruby-sqlite3 ruby-turbolinks ruby-uglifier"
+ruby_rails_CONTENTS="--exclude=guides ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_rails_doc_CONTENTS="${RUBYGEM_DOCDIR#/} ${RUBYGEM_INSTDIR#/}/guides/"
