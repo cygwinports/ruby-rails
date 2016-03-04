@@ -12,6 +12,6 @@ by favoring convention over configuration."
 ARCH=noarch
 
 PKG_NAMES="${NAME} ${NAME}-doc"
-ruby_rails_REQUIRES="ruby-coffee-rails ruby-jbuilder ruby-jquery-rails ruby-sass-rails ruby-sdoc ruby-sqlite3 ruby-turbolinks ruby-uglifier"
+ruby_rails_REQUIRES="ruby-byebug ruby-coffee-rails ruby-jbuilder ruby-jquery-rails ruby-sass-rails ruby-sdoc ruby-sqlite3 ruby-turbolinks ruby-uglifier ruby-web-console"
 ruby_rails_CONTENTS="--exclude=guides ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
 ruby_rails_doc_CONTENTS="${RUBYGEM_DOCDIR#/} ${RUBYGEM_INSTDIR#/}/guides/"
