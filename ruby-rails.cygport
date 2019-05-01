@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-rails"
-VERSION=5.1.4
+VERSION=5.1.6
 RELEASE=1
 CATEGORY="Ruby Web"
 SUMMARY="Ruby on Rails web framework"
@@ -12,6 +12,6 @@ by favoring convention over configuration."
 ARCH=noarch
 
 PKG_NAMES="${NAME} ${NAME}-doc"
-ruby_rails_REQUIRES="ruby-byebug ruby-coffee-rails ruby-jbuilder ruby-jquery-rails ruby-puma ruby-sass-rails ruby-sqlite3 ruby-turbolinks ruby-uglifier ruby-web-console"
+ruby_rails_REQUIRES="ruby-byebug ruby-coffee-rails ruby-jbuilder ruby-jquery-rails ruby-puma ruby-redis ruby-sass-rails ruby-sqlite3 ruby-turbolinks ruby-uglifier ruby-web-console"
 ruby_rails_CONTENTS=${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
 ruby_rails_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
